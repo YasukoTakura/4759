@@ -1,0 +1,371 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,28": "ID",
+    "3,28": "Date",
+    "5,28": "Int",
+    "7,28": "FreeText",
+    "9,45": "保存"
+  },
+  "Formulas": {
+    "3,44": "TEXT(AG4,\"yyyy/mm/dd\")"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "utb_test",
+        "RowIndex": 1,
+        "ColumnIndex": 2,
+        "ColumnCount": 23,
+        "RowCount": 10,
+        "ColumnOperation": 2,
+        "ShowGridLine": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "1,32": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, Forguncy",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "utb_test",
+        "ColumnName": "ID"
+      }
+    },
+    "2,4": {
+      "BindingInfo": {
+        "TableName": "utb_test",
+        "ColumnName": "Date"
+      }
+    },
+    "2,8": {
+      "BindingInfo": {
+        "TableName": "utb_test",
+        "ColumnName": "Int"
+      }
+    },
+    "2,11": {
+      "BindingInfo": {
+        "TableName": "utb_test",
+        "ColumnName": "FreeText"
+      }
+    },
+    "3,32": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, Forguncy",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "5,32": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, Forguncy",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "7,32": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, Forguncy",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "9,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.CallStoredProcedureCommand, Forguncy",
+            "ConnectionStringID": "834b738a-b897-4591-9643-cc164844cd12",
+            "Name": "usp_test_Insert",
+            "AllowAcessRoleList": [
+              "FGC_Anonymous",
+              "FGC_LoginUser",
+              "Administrator"
+            ],
+            "Parmeters": [
+              {
+                "Name": "ID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=ページ1!AG2"
+                },
+                "DataType": "int"
+              },
+              {
+                "Name": "Date",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=ページ1!AS4"
+                },
+                "DataType": "date"
+              },
+              {
+                "Name": "Int",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=ページ1!AG6"
+                },
+                "DataType": "int"
+              },
+              {
+                "Name": "FreeText",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=ページ1!AG8"
+                },
+                "DataType": "nvarchar"
+              }
+            ],
+            "ID": "47e0ce1070f24d13bf94085b5d1fa5c0"
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "_RS_Normal_Style2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Formatter": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": true
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "DarkGray",
+        "Body",
+        "yyyy/m/d",
+        "@",
+        "Top"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 2,
+      "2,2": 3,
+      "2,24": 4,
+      "3,2": 3,
+      "3,12": 4,
+      "3,24": 4,
+      "3,32": 5,
+      "3,44": 6,
+      "4,2": 3,
+      "4,12": 4,
+      "4,24": 4,
+      "5,2": 3,
+      "5,12": 4,
+      "5,24": 4,
+      "5,32": 6,
+      "6,2": 3,
+      "6,12": 4,
+      "6,24": 4,
+      "7,2": 3,
+      "7,12": 4,
+      "7,24": 4,
+      "7,32": 7,
+      "8,2": 3,
+      "8,12": 4,
+      "8,24": 4,
+      "9,2": 3,
+      "9,12": 4,
+      "9,24": 4,
+      "10,2": 8,
+      "10,3": 9,
+      "10,4": 9,
+      "10,5": 9,
+      "10,6": 9,
+      "10,7": 9,
+      "10,8": 9,
+      "10,9": 9,
+      "10,10": 9,
+      "10,11": 9,
+      "10,12": 10,
+      "10,13": 9,
+      "10,14": 9,
+      "10,15": 9,
+      "10,16": 9,
+      "10,17": 9,
+      "10,18": 9,
+      "10,19": 9,
+      "10,20": 9,
+      "10,21": 9,
+      "10,22": 9,
+      "10,23": 9,
+      "10,24": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,2,1,2",
+    "3,2,8,23",
+    "2,4,1,4",
+    "2,8,1,3",
+    "2,11,1,14",
+    "7,32,4,11",
+    "3,32,1,11",
+    "1,32,1,11",
+    "5,32,1,11",
+    "9,45,2,3",
+    "1,2,1,2",
+    "1,4,1,4",
+    "1,8,1,3",
+    "1,11,1,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}
